@@ -13,22 +13,22 @@ for (let i = 0; i < superheroes.length; i++) {
             `;
   
     if(superhero.alias){
-      html += `<li>${superhero.alias}</li>`;
+      html += `<li class="superhero-alias">${superhero.alias}</li>`;
     }
     if(superhero.equipment){
-     html += `<li>${superhero.equipment}</li>`;
+     html += `<li class="superhero-equipment">${superhero.equipment}</li>`;
     }
     if(superhero.hobby){
-      html += `<li>${superhero.hobby}</li>`;
+      html += `<li class="superhero-hobby">${superhero.hobby}</li>`;
     }
     if(superhero.power){
-      html += `<li>${superhero.power}</li>`;
+      html += `<li class="superhero-power">${superhero.power}</li>`;
     }
     if(superhero.sidekick){
-      html += `<li>${superhero.sidekick}</li>`;
+      html += `<li class="superhero-sidekick">${superhero.sidekick}</li>`;
     }
     if(superhero.weakness){
-      html += `<li>${superhero.weakness}</li>`;
+      html += `<li class="superhero-weakness">${superhero.weakness}</li>`;
     }
   
 
