@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Patrick Hand', sans-serif;
+  background: rgba(0, 0, 0, 0.2) url(../img/bg.jpg) no-repeat center center/cover;
+  background-blend-mode: multiply;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+}
+
+main {
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  text-align: center;
+}
+
+.superhero {
+  margin: 0 auto;
+  border-radius: 6px;
+  width: 100%;
+}
+
+.superhero-name {
+  font-family: 'Bangers', cursive;
+  background: linear-gradient(to right, #450931, #09451d);
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 6px 6px 0 0;
+  text-shadow: 2px 2px 10px #041822;
+  opacity: 0.9;
+  letter-spacing: 1px;
+}
+
+.superhero-info {
+  padding: 10px;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(3px);
+  box-shadow: inset 2px 2px 4px rgba(50, 50, 50, .5);
+  border-radius: 0px 0px 6px 6px;
+}
+
+li[class^="superhero-"] {
+  color: #fff;
+  padding: 3px 9px;
+}
+
+li[class^="superhero-"]:first-of-type {
+  border-radius: 3px 3px 0 0;
+}
+
+li[class^="superhero-"]:last-of-type {
+  border-radius: 0 0 3px 3px;
+}
+
+li[class^="superhero-"]::before {
+  display: inline-flex;
+  vertical-align: middle;
+  padding: 3px 8px 3px 0;
+}
+
+
+.superhero-alias {
+  background-color: #072534;
+}
+
+.superhero-alias::before {
+  content: url(../img/alias.svg);
+}
+
+.superhero-power {
+  background-color: #093145;
+}
+
+.superhero-power::before {
+  content: url(../img/power.svg);
+}
+
+.superhero-equipment {
+  background-color: #0b3d56;
+}
+
+.superhero-equipment::before {
+  content: url(../img/equipment.svg);
+}
+
+.superhero-weakness {
+  background-color: #0e4a68;
+}
+
+.superhero-weakness::before {
+  content: url(../img/weakness.svg);
+}
+
+.superhero-hobby {
+  background-color: #105679;
+}
+
+.superhero-hobby::before {
+  content: url(../img/hobby.svg);
+}
+
+.superhero-sidekick {
+  background-color: #12628a;
+}
+
+.superhero-sidekick::before {
+  content: url(../img/sidekick.svg);
+}
+
+@media (min-width: 768px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  main {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
